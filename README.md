@@ -1,0 +1,1 @@
+I modified the work yesterday in Lab2 so that I added more information about myself in my page and I used JavaScript to make interactive games with the user...lab3 was more difficult but more enjoyable.
