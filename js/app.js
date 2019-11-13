@@ -1,98 +1,141 @@
 'use strict'
 var userName = prompt(' What is your name?');
-
 alert('welcome' + ' ' + userName);
 
-var counter = 0;
+var counter = 1;
 
-var question = [
-    ["I was born in May,is that correct?", "yea in 15 may and my zodiac is Taurus", "noooo why you dont know!!!", "Try again"], ["Do you think I like to travel?", "Who does not like to travel", "there is no logical reason to not like it", "Try again"], ["Do you think I prefer quiet music more than loud?", "Unfortunately I am not", "You guessed", " Try again"], ["Do you think I prefer Breakfast more than dinner?", "sorry... wrong answer", "That is right", " Try again"], ["Do you think I like dogs?", "dogs are nice", "sorry..I like it", "Try again"], ["Do you think I like potato?", "yes..especially if it is crispy", "sorry..I love it more than anything", "Try again"]
-]
-function knowMe() {
-    for (var i = 0; i < 5; i++) {
-        var exactArray = question[i];
-        var promptQuestion = exactArray[0];
-        var posetiveReply = exactArray[1];
-        var negativeReply = exactArray[2];
-        var defultReply = exactArray[3];
-        var userName = prompt(promptQuestion);
-        userName = userName.toLowerCase();
-        switch (userName) {
-            case "yes":
-            case "y":
-                alert(posetiveReply);
-                counter = counter + 1;
-                // console.log(userName);
-                break;
-            case "no":
-            case "n":
-                alert(negativeReply);
-                // console.log(userName);
-                break;
-            default:
-                alert(defultReply);
-                // console.log(userName);
-                break;
-        }
+var qust1 = prompt('I was born in May, Is that true?');
+console.log(qust1);
+qust1 = qust1.toLowerCase();
+switch (qust1) {
+    case 'yes':
+    case 'y':
+   alert('Yaa..that is true');
+   alert('your score is' + counter++);
+   
+   break;
+   case 'no':
+   case 'n':
+       alert('no..why you do not konw!!');
+       break;
+       default:
+           alert('answer please');
+}
+
+var qust2 = prompt('Do you think i like sports?');
+console.log(qust2);
+qust2 = qust2.toLowerCase();
+switch (qust2) {
+    case 'yes':
+    case 'y':
+   alert('Yes I do');
+   alert('your score is' + counter++)
+
+   break;
+   case 'no':
+   case 'n':
+       alert('No I love it');
+       break;
+       default:
+           alert('answer please');
+}
+
+
+var qust3 = prompt('Do you think i like to travel?');
+console.log(qust3);
+qust3 = qust3.toLowerCase();
+switch (qust3) {
+    case 'yes':
+    case 'y':
+   alert('who dont like to travel');
+   alert('your score is' + counter++)
+
+   break;
+   case 'no':
+   case 'n':
+       alert('why you think so');
+
+       break;
+       default:
+           alert('answer please');
+}
+
+var qust4 = prompt('I prefer dinner more than breakfast,Is that correct?');
+console.log(qust4);
+qust4 = qust4.toLowerCase();
+switch (qust4) {
+    case 'yes':
+    case 'y':
+   alert('yaa I do');
+   break;
+   case 'no':
+   case 'n':
+       alert('false');
+       break;
+       default:
+           alert('answer please');
+}
+
+
+var qust5 = prompt('Do you think I love dogs?');
+console.log(qust5);
+qust5 = qust5.toLowerCase();
+switch (qust5) {
+    case 'yes':
+    case 'y':
+   alert('Dogs are so nice');
+   alert('your score is' + counter++)
+
+   break;
+   case 'no':
+   case 'n':
+       alert('noo i love dogs');
+       break;
+       default:
+           alert('answer please');
+}
+
+for (var times = 0; times < 4; times++) {
+    var weight = prompt("try to guess my weight...Note:it is between 50-60");
+    if (weight == 55) {
+        alert("WOW you guess it..it is 55 ");
+           alert('your score is' + counter++)
+
+        //console.log(mass);
+        break;
+
+    } else if (weight > 55) {
+        alert("too high");
+        //   console.log(mass);
+    } else if (weight < 55) {
+        alert(" too low");
+    //   console.log(mass);
+   }
+}
+alert('my wieght is 55');
+alert('your score is: ' + counter++);
+
+var sports = ['football', 'volleyball', 'tennis', 'badmenton', 'horse race', 'golf'];
+for (var trailes = 0; trailes < 6; trailes++) {
+    var lvSports = prompt("Guess which sports I prefer?");
+    switch(lvSports) {
+        case sports[0]:
+        case sports[1]:
+        case sports[2]:
+        case sports[3]:
+        case sports[4]:
+        case sports[5]:
+alert("great..my fav sports are football, volleyball, tennis, badmenton, horse race, golf");
+counter = counter + 1;
+//console.log(lvSports);
+trailes++;
+break;
+default:
+  alert("NO..you didnt get it ")
+// console.log(sports);
+break;
     }
 }
-knowMe();
-alert("Your score is: " + counter);
-
-function myWeight() {
-    for (var weight = 0; weight < 4; weight++) {
-        var mass = prompt("Guess how much i weight")
-        if (mass == 55) {
-            alert("how did you know? it is exactly my weight");
-            counter = counter + 1;
-            // console.log(mass);
-            break;
-        } else if (mass > 55) {
-            alert("too high");
-            //console.log(weight);
-        } else if (mass < 55) {
-            alert(" too low");
-            //console.log(mass);
-        }
-    }
-    alert("My weight is 55");
-    alert("Your score is: " + counter);
-}
-myWeight();
-
-
-function letsPlay() {
-    var guess = ['football', 'volleyball', 'Badminton', 'Tennis', 'Horse race', 'Golf'];
-    for (var times = 0; times < 6; times++) {
-        var go = prompt("I love six sports , So can you guess one of them?");
-        switch (go) {
-            case guess[0]:
-            case guess[1]:
-            case guess[2]:
-            case guess[3]:
-            case guess[4]:
-            case guess[5]:
-            alert(" yaa that is right :) My fav sports are: Football, Volleyball, Badminton, Tennis, Horse race, Golf");
-            counter = counter + 1;
-            //console.log(go);
-            times = 5;
-            break;
-            default:
-            alert("mmm...that is not true can you try again ")
-            // console.log(go);
-            break;
-        }
-    }
-    alert("  My fav sports are: Football, Volleyball, Badminton, Tennis, Horse race, Golf ");
-}
-letsPlay();
-alert("Your score is " + counter + " points");
-alert("I am grateful for being on my page " + user);
-
-
-
-
-
-
-
-
+alert("my fav sports are football, volleyball, tennis, badmenton, horse race, golf ");
+alert("you got " + counter + "points");
+alert("I am grateful for your presence on my pag " + userName);
