@@ -3,6 +3,8 @@ var userName = prompt(' What is your name?');
 alert('welcome' + ' ' + userName);
 
 var counter = 1;
+function qu1() {
+    
 
 var qust1 = prompt('I was born in May, Is that true?');
 console.log(qust1);
@@ -21,6 +23,10 @@ switch (qust1) {
        default:
            alert('answer please');
 }
+}
+qu1();
+function qu2() {
+    
 
 var qust2 = prompt('Do you think i like sports?');
 console.log(qust2);
@@ -39,6 +45,10 @@ switch (qust2) {
        default:
            alert('answer please');
 }
+}
+qu2();
+function qu3() {
+    
 
 
 var qust3 = prompt('Do you think i like to travel?');
@@ -59,6 +69,10 @@ switch (qust3) {
        default:
            alert('answer please');
 }
+}
+qu3();
+function qu4() {
+    
 
 var qust4 = prompt('I prefer dinner more than breakfast,Is that correct?');
 console.log(qust4);
@@ -76,6 +90,10 @@ switch (qust4) {
            alert('answer please');
 }
 
+}
+qu4();
+function qu5() {
+    
 
 var qust5 = prompt('Do you think I love dogs?');
 console.log(qust5);
@@ -94,6 +112,10 @@ switch (qust5) {
        default:
            alert('answer please');
 }
+}
+qu5();
+function qu6() {
+    
 
 for (var times = 0; times < 4; times++) {
     var weight = prompt("try to guess my weight...Note:it is between 50-60");
@@ -114,6 +136,10 @@ for (var times = 0; times < 4; times++) {
 }
 alert('my wieght is 55');
 alert('your score is: ' + counter++);
+}
+qu6();
+function qu7() {
+    
 
 var sports = ['football', 'volleyball', 'tennis', 'badmenton', 'horse race', 'golf'];
 for (var trailes = 0; trailes < 6; trailes++) {
@@ -136,6 +162,8 @@ default:
 break;
     }
 }
+}
+qu7();
 alert("my fav sports are football, volleyball, tennis, badmenton, horse race, golf ");
 alert("you got " + counter + "points");
 alert("I am grateful for your presence on my pag " + userName);
