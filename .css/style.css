@@ -1,14 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 html {
-    background-image: url(https://www.medicalnewstoday.com/content/images/articles/325/325553/some-common-drugs-may-increase-dementia-risk.jpg
-    );
+    background-image: url(https://previews.123rf.com/images/bentchang/bentchang1805/bentchang180500762/100958365-illustrations-of-capsules-medicine-or-pills-good-for-web-page-wallpaper-graphic-design-catalog-textu.jpg);
 }
 h1 {
-    color: brown;
+    color: darkblue;
+    font-size : 90px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
 
 }
 p {
-    color: brown;
+    color: rgb(92, 70, 172);
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
 }
-ul li {
-    color: brown;
+.ol {
+    color: rgb(73, 31, 66);
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    list-style-type: square;
+}
+
+.ol2 {
+    color: rgb(73, 32, 58);
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+}
+img {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+    -webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+    
 }
